@@ -142,7 +142,7 @@ app.post('/admin', (req, res)=>{
         if (err) {
             console.log(err);
         }else{
-            res.send("<h1>Updated Successfully</h1> <h3><a href='/'>Main Page</a><br><a href='/admin'>Admin Page</a></h3>");
+            res.send("<h1>Updated Successfully</h1> <h3><a href='/'>Main Page</a></h3>");
         }
     });
 })
