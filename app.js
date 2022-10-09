@@ -23,7 +23,7 @@ app.use(session({
 app.use(passport.initialize());
 app.use(passport.session());
 //Connect to DB
-mongoose.connect("mongodb+srv://admin-bekki:Test123@cluster0.yi31cuu.mongodb.net/intour",
+mongoose.connect(`${process.env.MONGO_URL}`,
 { useNewUrlParser: true, useUnifiedTopology: true }, err => {
 		console.log('connected')
 	});
